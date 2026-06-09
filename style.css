@@ -1513,3 +1513,163 @@ html, body{
     height:335px !important;
   }
 }
+
+
+/* === FINAL MOBILE POLISH: Resume link + clean headings + aligned cards === */
+.mobile-resume-link,
+.mobile-hero-resume{
+  display:none;
+}
+
+.nav-links .mobile-resume-link{
+  border-top:1px solid var(--border);
+  margin-top:8px;
+  padding-top:14px;
+  color:var(--text);
+  font-weight:900;
+}
+
+@media(min-width:851px){
+  .mobile-resume-link,
+  .mobile-hero-resume{
+    display:none !important;
+  }
+}
+
+@media(max-width:850px){
+  .nav-links.show .mobile-resume-link{
+    display:block !important;
+    background:var(--text);
+    color:#fff !important;
+    padding:13px 16px !important;
+    border-radius:999px;
+    text-align:center;
+    margin-top:12px;
+    border:0;
+  }
+
+  .mobile-hero-resume{
+    display:inline-flex !important;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .hero{
+    padding-top:44px !important;
+  }
+
+  .eyebrow{
+    font-size:12px !important;
+    letter-spacing:2.2px !important;
+    max-width:280px;
+  }
+
+  .hero h1{
+    font-size:42px !important;
+    line-height:1.08 !important;
+    letter-spacing:-.5px !important;
+  }
+
+  .stats article{
+    min-height:100px !important;
+    justify-content:center !important;
+  }
+
+  .stats strong{
+    font-size:27px !important;
+    line-height:1.1 !important;
+  }
+
+  .stats small{
+    max-width:220px;
+    line-height:1.35 !important;
+  }
+
+  .section h2,
+  .split h2,
+  .section-head h2{
+    font-size:34px !important;
+    line-height:1.12 !important;
+    letter-spacing:-.35px !important;
+    max-width:100% !important;
+  }
+
+  #about .split h2,
+  #experience .split h2{
+    font-size:34px !important;
+    line-height:1.14 !important;
+  }
+
+  .split{
+    gap:22px !important;
+  }
+
+  .text-block p,
+  .split p,
+  .section-head p{
+    font-size:15.5px !important;
+    line-height:1.75 !important;
+  }
+
+  .experience-card h3{
+    font-size:25px !important;
+  }
+
+  .experience-head{
+    gap:8px !important;
+  }
+
+  .experience-head span{
+    font-size:13px !important;
+  }
+
+  .skill-card{
+    min-height:auto !important;
+  }
+
+  .skills-grid{
+    gap:18px !important;
+  }
+}
+
+@media(max-width:420px){
+  .hero h1{
+    font-size:39px !important;
+  }
+
+  .section h2,
+  .split h2,
+  .section-head h2,
+  #about .split h2,
+  #experience .split h2{
+    font-size:31px !important;
+  }
+
+  .hero-actions{
+    flex-direction:column !important;
+    align-items:stretch !important;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+    width:100% !important;
+    text-align:center !important;
+    justify-content:center !important;
+  }
+}
+
+
+/* === FINAL TEXT STANDARD FIX === */
+@media(max-width:850px){
+  .stats small{
+    max-width:270px !important;
+    white-space:normal !important;
+  }
+}
+
+@media(max-width:420px){
+  .stats small{
+    font-size:12px !important;
+    max-width:260px !important;
+  }
+}
