@@ -4,13 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pakshikaa Elango | Associate QA Engineer</title>
-  <meta name="description" content="Professional portfolio of Pakshikaa Elango, Associate Quality Assurance Engineer." />
+  <meta name="description" content="Portfolio of Pakshikaa Elango, Associate QA Engineer — manual & API testing, defect tracking and Agile QA. Proof-of-work QA artifacts, case studies and measurable impact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="cursor-glow" id="cursorGlow"></div>
-  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- Animated background blobs (decorative) -->
+  <div class="bg-canvas" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
 
   <header class="navbar" id="navbar">
     <a href="#home" class="brand">
@@ -18,43 +27,43 @@
       <strong>Pakshikaa Elango</strong>
     </a>
 
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">QA Projects</a>
+      <a href="#projects">Case Studies</a>
+      <a href="#artifacts">QA Proof</a>
+      <a href="#journey">Journey</a>
       <a href="#contact">Contact</a>
-      <a class="mobile-resume-link" href="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" download="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" target="_blank" rel="noopener">Download Resume</a>
     </nav>
 
-    <a class="resume-btn" href="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" download="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" target="_blank" rel="noopener">Resume</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <a class="resume-btn" href="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" download="Pakshikaa_Elango_QA_Resume.pdf" rel="noopener">Resume</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
   </header>
 
   <main>
+    <!-- ============ HERO ============ -->
     <section id="home" class="hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">Associate Quality Assurance Engineer</p>
 
         <h1>
-          Quality Assured.<br />
-          <span>Confidence Delivered.</span>
+          I break software<br />
+          <span>so users never have to.</span>
         </h1>
 
         <p class="hero-text">
-          Associate QA Engineer skilled in Manual Testing, API Validation,
-          Defect Tracking and Agile QA workflows. Focused on reliable,
-          user-friendly software through structured testing and clear documentation.
+          QA engineer who turns messy requirements into <strong>traceable test coverage</strong>,
+          <strong>reproducible bug reports</strong> and <strong>release confidence</strong> — 100+ test
+          cases executed and 100+ defects tracked across web, mobile and API workflows.
         </p>
 
         <div class="hero-actions">
-          <a href="#projects" class="primary-btn magnetic">View QA Projects</a>
-          <a href="#contact" class="secondary-btn magnetic">Contact Me</a>
-          <a href="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" class="secondary-btn mobile-hero-resume magnetic" download="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a href="#projects" class="primary-btn magnetic">View Case Studies</a>
+          <a href="#artifacts" class="secondary-btn magnetic">See QA Proof of Work</a>
         </div>
 
-
-        <div class="mern-strip reveal" aria-label="MERN stack animation">
+        <div class="mern-strip reveal" aria-label="MERN stack exposure">
           <span class="mern-label">MERN Stack Exposure</span>
           <div class="mern-marquee">
             <div class="mern-track">
@@ -67,32 +76,37 @@
         </div>
 
         <div class="stats">
-          <article class="hover-card">
-            <strong>6+</strong>
-            <small>QA & Development Projects</small>
+          <article class="stat-card hover-card">
+            <strong class="count" data-target="6" data-suffix="+">0</strong>
+            <small>Projects Tested & Built</small>
           </article>
-          <article class="hover-card">
-            <strong>6 Months</strong>
+          <article class="stat-card hover-card">
+            <strong class="count" data-target="6" data-suffix=" mo">0</strong>
             <small>QA Internship Experience</small>
           </article>
-          <article class="hover-card">
-            <strong>Final Year</strong>
-            <small>BSc (Hons) Information Technology · SLIIT</small>
+          <article class="stat-card hover-card">
+            <strong class="count" data-target="100" data-suffix="+">0</strong>
+            <small>Test Cases Executed</small>
+          </article>
+          <article class="stat-card hover-card">
+            <strong class="count" data-target="100" data-suffix="+">0</strong>
+            <small>Defects Logged & Tracked</small>
           </article>
         </div>
       </div>
 
       <div class="hero-visual reveal">
         <div class="portrait">
-          <img src="hero-photo.png" alt="Pakshikaa Elango professional photo" />
+          <img src="assets/hero-photo.png" alt="Pakshikaa Elango, Associate QA Engineer" width="520" height="590" fetchpriority="high" />
         </div>
       </div>
     </section>
 
+    <!-- ============ ABOUT ============ -->
     <section id="about" class="section about">
       <p class="section-kicker">01 / About</p>
       <div class="split">
-        <h2 class="reveal">Quality-Focused QA Mindset.</h2>
+        <h2 class="reveal">Quality-first mindset with developer-level understanding.</h2>
         <div class="text-block reveal">
           <p>
             I am Pakshikaa Elango, a final-year BSc (Hons) Information Technology undergraduate at SLIIT.
@@ -100,8 +114,9 @@
             user experience and product reliability.
           </p>
           <p>
-            My internship experience at Codelantic (Pvt) Ltd helped me understand production workflows,
-            Agile collaboration, test documentation and the importance of reliable software delivery.
+            My internship at Codelantic (Pvt) Ltd taught me production workflows, Agile collaboration,
+            test documentation and what it really takes to ship reliable software — not just find bugs,
+            but communicate them so they get fixed.
           </p>
         </div>
       </div>
@@ -125,10 +140,11 @@
       </div>
     </section>
 
+    <!-- ============ EXPERIENCE ============ -->
     <section id="experience" class="section experience">
       <p class="section-kicker">02 / Experience</p>
       <div class="split">
-        <h2 class="reveal">QA Practice Shaped by Industry Exposure.</h2>
+        <h2 class="reveal">Industry exposure that shaped my QA practice.</h2>
 
         <article class="experience-card hover-card reveal">
           <div class="experience-head">
@@ -140,114 +156,400 @@
           </div>
 
           <ul>
-            <li>Executed 100+ manual test cases across web and mobile application workflows, covering functional, regression, UI and usability testing.</li>
+            <li>Executed 100+ manual test cases across web and mobile workflows — functional, regression, UI and usability testing.</li>
             <li>Reported and tracked 100+ defects using Agile QA workflows, collaborating with developers to verify fixes and improve release quality.</li>
-            <li>Performed API validation using Postman, including request/response checks, status-code verification and basic data validation.</li>
-            <li>Prepared clear test scenarios, test case documentation, defect notes and retesting updates for sprint-based delivery.</li>
-            <li>Familiar with Jira for issue tracking and have basic automation exposure with Selenium and Playwright.</li>
+            <li>Performed API validation using Postman — request/response checks, status-code verification and data validation.</li>
+            <li>Prepared clear test scenarios, test-case documentation, defect notes and retesting updates for sprint-based delivery.</li>
+            <li>Used Jira for issue tracking, with hands-on automation exposure in Selenium and Playwright.</li>
           </ul>
         </article>
       </div>
     </section>
 
+    <!-- ============ SKILLS (proficiency) ============ -->
     <section id="skills" class="section skills">
       <p class="section-kicker">03 / Skills</p>
-      <div class="section-head reveal skill-head">
-        <div>
-          <h2>Technical toolkit</h2>
-        </div>
-        
-        <p>Core QA, automation and development skills focused on delivering reliable, high-quality software.</p>
+      <div class="section-head reveal">
+        <h2>Technical toolkit</h2>
+        <p>Core QA, automation and development skills — shown with honest proficiency levels rather than a flat tag cloud.</p>
       </div>
 
       <div class="skills-grid">
         <article class="skill-card hover-card reveal">
           <h3>Quality Assurance</h3>
-          <div class="chips">
-            <span>Manual Testing</span><span>Regression Testing</span><span>Smoke Testing</span><span>API Testing</span><span>UI Testing</span><span>Mobile Testing</span><span>Test Case Design</span><span>Bug Reporting</span><span>Bug Verification</span><span>Test Documentation</span><span>SQL</span>
-          </div>
+          <ul class="skill-list">
+            <li data-level="90"><span class="skill-name">Manual Testing</span><span class="skill-tag proficient">Proficient</span></li>
+            <li data-level="88"><span class="skill-name">Test Case Design</span><span class="skill-tag proficient">Proficient</span></li>
+            <li data-level="85"><span class="skill-name">Bug Reporting &amp; Verification</span><span class="skill-tag proficient">Proficient</span></li>
+            <li data-level="82"><span class="skill-name">Regression &amp; Smoke Testing</span><span class="skill-tag proficient">Proficient</span></li>
+            <li data-level="75"><span class="skill-name">API Testing</span><span class="skill-tag strong">Strong</span></li>
+            <li data-level="70"><span class="skill-name">Mobile / UI Testing</span><span class="skill-tag strong">Strong</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card hover-card reveal">
+          <h3>Tools &amp; Workflow</h3>
+          <ul class="skill-list">
+            <li data-level="85"><span class="skill-name">Postman</span><span class="skill-tag proficient">Proficient</span></li>
+            <li data-level="80"><span class="skill-name">Jira</span><span class="skill-tag proficient">Proficient</span></li>
+            <li data-level="82"><span class="skill-name">Agile / Scrum</span><span class="skill-tag proficient">Proficient</span></li>
+            <li data-level="78"><span class="skill-name">Git &amp; GitHub</span><span class="skill-tag strong">Strong</span></li>
+            <li data-level="60"><span class="skill-name">Selenium</span><span class="skill-tag learning">Learning</span></li>
+            <li data-level="58"><span class="skill-name">Playwright</span><span class="skill-tag learning">Learning</span></li>
+          </ul>
         </article>
 
         <article class="skill-card hover-card reveal">
           <h3>Development</h3>
-          <div class="chips">
-            <span>Java</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>PHP / MySQL</span>
-          </div>
-        </article>
-
-        <article class="skill-card hover-card reveal">
-          <h3>Tools & Workflow</h3>
-          <div class="chips">
-            <span>Jira</span><span>Postman</span><span>Selenium</span><span>Playwright</span><span>GitHub</span><span>Agile / Scrum</span><span>REST API</span><span>Documentation</span><span>Team Collaboration</span>
-          </div>
+          <ul class="skill-list">
+            <li data-level="78"><span class="skill-name">JavaScript</span><span class="skill-tag strong">Strong</span></li>
+            <li data-level="72"><span class="skill-name">React</span><span class="skill-tag strong">Strong</span></li>
+            <li data-level="70"><span class="skill-name">Node.js / Express</span><span class="skill-tag strong">Strong</span></li>
+            <li data-level="68"><span class="skill-name">MongoDB / SQL</span><span class="skill-tag strong">Strong</span></li>
+            <li data-level="70"><span class="skill-name">Java</span><span class="skill-tag strong">Strong</span></li>
+            <li data-level="62"><span class="skill-name">PHP / MySQL</span><span class="skill-tag learning">Learning</span></li>
+          </ul>
         </article>
       </div>
     </section>
 
+    <!-- ============ PROJECTS → CASE STUDIES ============ -->
     <section id="projects" class="section projects">
-      <p class="section-kicker">04 / Projects</p>
+      <p class="section-kicker">04 / Case Studies</p>
       <div class="section-head reveal">
-        <h2>QA-focused project work</h2>
-        <p>Projects presented with a quality-focused view, including validation thinking, usability awareness, API understanding and development exposure.</p>
+        <h2>QA case studies</h2>
+        <p>Each project framed the way I approach quality: the problem, my testing role and approach, and the measurable outcome.</p>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card hover-card reveal">
+        <!-- CASE STUDY 01 -->
+        <article class="case-card hover-card reveal">
           <small>01 / Research · Mobile AI</small>
           <h3>MomEra — AI-Driven IVF Success Prediction</h3>
-          <p>Healthcare-focused mobile application predicting IVF treatment success using hormone response analysis and machine learning.</p>
-          <div class="chips"><span>React Native</span><span>Expo</span><span>Machine Learning</span><span>XGBoost</span></div>
-          <a href="https://github.com/GnanasampanthanThivakar/ivffinal" target="_blank" rel="noopener">View Code ↗</a>
+          <div class="case-block">
+            <p class="case-label problem">Problem</p>
+            <p>An ML-driven healthcare app predicting IVF success must be trusted — wrong inputs or broken flows erode patient confidence.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label role">My QA Role &amp; Approach</p>
+            <p>Designed functional &amp; input-validation test cases for the prediction flow; boundary-tested hormone-value inputs and validated ML API responses against expected ranges.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label outcome">Outcome</p>
+            <p>Caught invalid-input and edge-case handling gaps before demo; verified prediction output stayed within valid bounds across test data.</p>
+          </div>
+          <div class="chips"><span>React Native</span><span>Expo</span><span>XGBoost</span><span>API Testing</span></div>
+          <div class="case-actions">
+            <a class="case-btn primary" href="https://github.com/GnanasampanthanThivakar/ivffinal" target="_blank" rel="noopener">View Code ↗</a>
+            <!-- TODO: replace # with real live demo URL, or delete this button if none -->
+            <a class="case-btn ghost" href="#" data-todo="live-demo" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
         </article>
 
-        <article class="project-card hover-card reveal">
+        <!-- CASE STUDY 02 -->
+        <article class="case-card hover-card reveal">
           <small>02 / Microservices</small>
           <h3>Smart Campus Service Request System</h3>
-          <p>Campus platform for submitting, assigning, tracking and managing student/staff service requests.</p>
+          <div class="case-block">
+            <p class="case-label problem">Problem</p>
+            <p>Students and staff needed a reliable way to raise, assign and track service requests across a multi-service backend.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label role">My QA Role &amp; Approach</p>
+            <p>Wrote end-to-end test cases for the request lifecycle (create → assign → track → resolve); regression-tested status transitions and validated REST endpoints in Postman.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label outcome">Outcome</p>
+            <p>Surfaced state-transition and permission defects; documented reproducible steps that shortened developer fix cycles.</p>
+          </div>
           <div class="chips"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Microservices</span></div>
-          <a href="https://github.com/GnanasampanthanThivakar/mtit" target="_blank" rel="noopener">View Code ↗</a>
+          <div class="case-actions">
+            <a class="case-btn primary" href="https://github.com/GnanasampanthanThivakar/mtit" target="_blank" rel="noopener">View Code ↗</a>
+            <a class="case-btn ghost" href="#" data-todo="live-demo" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
         </article>
 
-        <article class="project-card hover-card reveal">
+        <!-- CASE STUDY 03 -->
+        <article class="case-card hover-card reveal">
           <small>03 / Learning Platform</small>
           <h3>SkillHorizon — Skill Sharing Platform</h3>
-          <p>Collaborative learning platform with posts, likes, comments, profiles, notifications and learning progress.</p>
+          <div class="case-block">
+            <p class="case-label problem">Problem</p>
+            <p>Social learning features (posts, likes, comments, notifications, progress) create many interacting states that break easily.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label role">My QA Role &amp; Approach</p>
+            <p>Built test scenarios for CRUD and social interactions; UI-validated feed/profile flows and verified REST API responses and error handling.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label outcome">Outcome</p>
+            <p>Identified notification and comment-state bugs; improved coverage of error and empty states before delivery.</p>
+          </div>
           <div class="chips"><span>React</span><span>Spring Boot</span><span>MongoDB</span><span>REST API</span></div>
-          <a href="https://github.com/GnanasampanthanThivakar/SkillHorizon" target="_blank" rel="noopener">View Code ↗</a>
+          <div class="case-actions">
+            <a class="case-btn primary" href="https://github.com/GnanasampanthanThivakar/SkillHorizon" target="_blank" rel="noopener">View Code ↗</a>
+            <a class="case-btn ghost" href="#" data-todo="live-demo" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
         </article>
 
-        <article class="project-card hover-card reveal">
+        <!-- CASE STUDY 04 -->
+        <article class="case-card hover-card reveal">
           <small>04 / Finance Web App</small>
           <h3>My Finance Mate</h3>
-          <p>Smart finance management platform for income, expenses, budgets, savings goals and financial insights.</p>
+          <div class="case-block">
+            <p class="case-label problem">Problem</p>
+            <p>Finance calculations (income, expenses, budgets, savings goals) must be accurate — a rounding or logic slip breaks user trust.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label role">My QA Role &amp; Approach</p>
+            <p>Wrote calculation and boundary test cases for budgets and goal tracking; validated data persistence and cross-checked totals against expected values.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label outcome">Outcome</p>
+            <p>Verified calculation accuracy across edge cases; flagged data-consistency issues between views.</p>
+          </div>
           <div class="chips"><span>React</span><span>Node.js</span><span>MongoDB</span><span>JavaScript</span></div>
-          <a href="https://github.com/GnanasampanthanThivakar/MYFINANCEMATE" target="_blank" rel="noopener">View Code ↗</a>
+          <div class="case-actions">
+            <a class="case-btn primary" href="https://github.com/GnanasampanthanThivakar/MYFINANCEMATE" target="_blank" rel="noopener">View Code ↗</a>
+            <a class="case-btn ghost" href="#" data-todo="live-demo" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
         </article>
 
-        <article class="project-card hover-card reveal">
+        <!-- CASE STUDY 05 -->
+        <article class="case-card hover-card reveal">
           <small>05 / Business System</small>
           <h3>Sai Photography Management System</h3>
-          <p>Photography studio system for bookings, packages, inventory, payments and revenue workflows.</p>
+          <div class="case-block">
+            <p class="case-label problem">Problem</p>
+            <p>A studio system handling bookings, packages, inventory and payments needs dependable end-to-end workflows.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label role">My QA Role &amp; Approach</p>
+            <p>Tested booking and payment workflows end-to-end; validated inventory updates and REST endpoints; documented defects with clear reproduction steps.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label outcome">Outcome</p>
+            <p>Confirmed booking and revenue flows behaved correctly; caught inventory-sync issues during regression.</p>
+          </div>
           <div class="chips"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST API</span></div>
-          <a href="https://github.com/pakshikaa/ITP_PROJECT" target="_blank" rel="noopener">View Code ↗</a>
+          <div class="case-actions">
+            <a class="case-btn primary" href="https://github.com/pakshikaa/ITP_PROJECT" target="_blank" rel="noopener">View Code ↗</a>
+            <a class="case-btn ghost" href="#" data-todo="live-demo" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
         </article>
 
-        <article class="project-card hover-card reveal">
+        <!-- CASE STUDY 06 -->
+        <article class="case-card hover-card reveal">
           <small>06 / Android App</small>
           <h3>ToDo Task Management App</h3>
-          <p>Android task management application for creating, organizing and tracking daily tasks.</p>
+          <div class="case-block">
+            <p class="case-label problem">Problem</p>
+            <p>A native Android task app must reliably create, organise and persist tasks across app sessions.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label role">My QA Role &amp; Approach</p>
+            <p>Performed functional and usability testing on task CRUD; verified persistence and validated UI behaviour across device states.</p>
+          </div>
+          <div class="case-block">
+            <p class="case-label outcome">Outcome</p>
+            <p>Ensured tasks persisted correctly; reported UI and state-handling defects for fixing.</p>
+          </div>
           <div class="chips"><span>Kotlin</span><span>Android Studio</span><span>Gradle</span></div>
-          <a href="https://github.com/pakshikaa/ToDo_app" target="_blank" rel="noopener">View Code ↗</a>
+          <div class="case-actions">
+            <a class="case-btn primary" href="https://github.com/pakshikaa/ToDo_app" target="_blank" rel="noopener">View Code ↗</a>
+            <a class="case-btn ghost" href="#" data-todo="live-demo" target="_blank" rel="noopener">Live Demo ↗</a>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- ============ QA ARTIFACTS / PROOF OF WORK ============ -->
+    <section id="artifacts" class="section artifacts">
+      <p class="section-kicker">05 / Proof of Work</p>
+      <div class="section-head reveal">
+        <h2>QA artifacts, not just claims</h2>
+        <p>Representative samples of my QA output — the kind of documentation I produce day to day. Swap these mock-ups for real screenshots or PDF exports anytime.</p>
+      </div>
+
+      <div class="artifacts-grid">
+        <!-- Artifact 1: Test Case Document -->
+        <article class="artifact-card hover-card reveal">
+          <div class="artifact-head">
+            <span class="artifact-kind">Test Case Document</span>
+            <span class="artifact-file">login_module_TCs.xlsx</span>
+          </div>
+          <div class="artifact-body">
+            <table class="tc-table">
+              <thead>
+                <tr><th>ID</th><th>Scenario</th><th>Expected</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>TC-01</td><td>Valid login</td><td>Redirect to dashboard</td><td><span class="badge pass">Pass</span></td></tr>
+                <tr><td>TC-02</td><td>Empty password</td><td>Show validation error</td><td><span class="badge pass">Pass</span></td></tr>
+                <tr><td>TC-03</td><td>SQL in email field</td><td>Input sanitised</td><td><span class="badge fail">Fail</span></td></tr>
+                <tr><td>TC-04</td><td>Wrong password ×5</td><td>Account lockout</td><td><span class="badge block">Blocked</span></td></tr>
+                <tr><td>TC-05</td><td>Remember me</td><td>Session persists</td><td><span class="badge pass">Pass</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="artifact-note">Traceable IDs, expected results and execution status — structured for regression reuse.</p>
+        </article>
+
+        <!-- Artifact 2: Bug Report (Jira-style) -->
+        <article class="artifact-card hover-card reveal">
+          <div class="artifact-head">
+            <span class="artifact-kind">Bug Report</span>
+            <span class="artifact-file">QA-247</span>
+          </div>
+          <div class="artifact-body">
+            <div class="bug-card">
+              <div class="bug-top">
+                <span class="bug-id">🐞 QA-247</span>
+                <span class="badge priority-high">Priority: High</span>
+              </div>
+              <h4 class="bug-title">Checkout total ignores applied discount code</h4>
+              <div class="bug-meta">
+                <span><b>Severity:</b> Major</span>
+                <span><b>Env:</b> Chrome 126 · Staging</span>
+                <span class="badge status-open">Status: Open</span>
+              </div>
+              <p class="bug-sub">Steps to reproduce</p>
+              <ol class="bug-steps">
+                <li>Add any item to cart</li>
+                <li>Apply valid code <code>SAVE10</code></li>
+                <li>Proceed to checkout</li>
+              </ol>
+              <p class="bug-sub">Expected vs Actual</p>
+              <p class="bug-ea"><b>Expected:</b> Total reduced by 10%. <b>Actual:</b> Full price charged; discount shown but not deducted.</p>
+            </div>
+          </div>
+          <p class="artifact-note">Reproducible, prioritised and developer-ready — the reports that actually get fixed.</p>
+        </article>
+
+        <!-- Artifact 3: Postman API Collection -->
+        <article class="artifact-card hover-card reveal">
+          <div class="artifact-head">
+            <span class="artifact-kind">API Test Collection</span>
+            <span class="artifact-file">Postman · Auth Service</span>
+          </div>
+          <div class="artifact-body">
+            <div class="postman">
+              <div class="pm-row"><span class="method get">GET</span><span class="pm-url">/api/users/me</span><span class="pm-status ok">200 OK</span></div>
+              <div class="pm-row"><span class="method post">POST</span><span class="pm-url">/api/auth/login</span><span class="pm-status ok">200 OK</span></div>
+              <div class="pm-row"><span class="method post">POST</span><span class="pm-url">/api/auth/login</span><span class="pm-status err">401</span></div>
+              <div class="pm-row"><span class="method put">PUT</span><span class="pm-url">/api/users/42</span><span class="pm-status ok">200 OK</span></div>
+              <div class="pm-row"><span class="method del">DEL</span><span class="pm-url">/api/sessions/8f2</span><span class="pm-status ok">204</span></div>
+              <div class="pm-tests">
+                <span class="pm-check">✓ Status code is 200</span>
+                <span class="pm-check">✓ Response time &lt; 400ms</span>
+                <span class="pm-check">✓ Body has auth token</span>
+              </div>
+            </div>
+          </div>
+          <p class="artifact-note">Endpoint checks with status-code, latency and schema assertions — API coverage, verified.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY / TIMELINE ============ -->
+    <section id="journey" class="section journey">
+      <p class="section-kicker">06 / Journey</p>
+      <div class="section-head reveal">
+        <h2>The path so far</h2>
+        <p>From foundations to focus — education, industry experience and where I'm sharpening next.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card hover-card">
+            <span class="tl-date">2022 – 2026</span>
+            <h3>BSc (Hons) Information Technology — SLIIT</h3>
+            <p>Final-year undergraduate specialising in software quality, full-stack development and Agile practices.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card hover-card">
+            <span class="tl-date">Aug 2024 – Feb 2025</span>
+            <h3>Intern QA Engineer — Codelantic (Pvt) Ltd</h3>
+            <p>100+ test cases executed, 100+ defects tracked; manual, API, UI and regression testing in a real Agile team.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card hover-card">
+            <span class="tl-date">2023 – 2025</span>
+            <h3>Key QA &amp; Full-Stack Projects</h3>
+            <p>Six projects across web, mobile and microservices — tested for functionality, APIs and reliability (see case studies above).</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card hover-card">
+            <span class="tl-date">Ongoing</span>
+            <!-- TODO: add real certifications here (e.g. ISTQB Foundation) when available -->
+            <h3>Certifications &amp; Continuous Learning</h3>
+            <p>Building toward formal QA certification (ISTQB Foundation track) and strengthening automation fundamentals.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal current">
+          <span class="tl-dot"></span>
+          <div class="tl-card hover-card">
+            <span class="tl-date">Now</span>
+            <h3>Current Focus — Test Automation</h3>
+            <p>Deepening Selenium &amp; Playwright to move from manual coverage into maintainable automated regression suites.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ TESTIMONIALS / SOCIAL PROOF ============ -->
+    <section id="testimonials" class="section testimonials">
+      <p class="section-kicker">07 / Social Proof</p>
+      <div class="section-head reveal">
+        <h2>What people say</h2>
+        <p>Recommendations from people I've worked with.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <!-- TODO: replace with a REAL, permissioned recommendation (e.g. LinkedIn quote from your Codelantic manager). Keep or remove the second card. -->
+        <figure class="testimonial-card hover-card reveal">
+          <blockquote>
+            "Pakshikaa is thorough and detail-oriented — her test documentation was clear, her defect reports were easy to reproduce, and she communicated issues to developers effectively throughout the sprint."
+          </blockquote>
+          <figcaption>
+            <span class="t-avatar">C</span>
+            <span class="t-meta">
+              <b>[Manager Name]</b>
+              <small>QA Lead / Supervisor · Codelantic (Pvt) Ltd</small>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial-card hover-card reveal">
+          <blockquote>
+            "Reliable, coachable and quality-focused. She took ownership of testing tasks and consistently raised the bar on release quality."
+          </blockquote>
+          <figcaption>
+            <span class="t-avatar">T</span>
+            <span class="t-meta">
+              <b>[Teammate / Mentor Name]</b>
+              <small>Software Engineer · Project Collaborator</small>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="testimonial-disclaimer">Placeholder quotes — replace with real, permissioned recommendations before publishing.</p>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
     <section id="contact" class="section contact">
-      <p class="section-kicker">05 / Contact</p>
+      <p class="section-kicker">08 / Contact</p>
 
       <div class="contact-panel hover-card reveal">
         <div>
-          <h2>Let’s connect.</h2>
+          <h2>Let's connect.</h2>
           <p>Open to Associate QA Engineer and Software Tester opportunities.</p>
         </div>
 
@@ -255,7 +557,7 @@
           <a href="mailto:pakshikaa@gmail.com">pakshikaa@gmail.com</a>
           <a href="https://github.com/pakshikaa" target="_blank" rel="noopener">github.com/pakshikaa</a>
           <a href="https://www.linkedin.com/in/pakshikaa-elango" target="_blank" rel="noopener">linkedin.com/in/pakshikaa-elango</a>
-          <span>Jaffna</span>
+          <span>Jaffna, Sri Lanka</span>
         </div>
       </div>
     </section>
@@ -265,6 +567,12 @@
     <strong>Pakshikaa Elango</strong>
     <span>Associate Quality Assurance Engineer · Portfolio 2026</span>
   </footer>
+
+  <!-- Floating download resume button -->
+  <a class="fab-resume" href="PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf" download="Pakshikaa_Elango_QA_Resume.pdf" rel="noopener" aria-label="Download resume">
+    <span class="fab-icon">↓</span>
+    <span class="fab-text">Resume</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
