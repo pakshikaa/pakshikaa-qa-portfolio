@@ -4,10 +4,10 @@ import MernMarquee from "./MernMarquee";
 import CountUp from "./CountUp";
 
 const STATS = [
-  { target: 6, suffix: "+", label: "Projects Tested & Built" },
-  { target: 6, suffix: " mo", label: "QA Internship Experience" },
-  { target: 100, suffix: "+", label: "Test Cases Executed" },
+  { target: 120, suffix: "+", label: "Test Cases Executed" },
+  { target: 50, suffix: "+", label: "REST API Endpoints Assessed" },
   { target: 100, suffix: "+", label: "Defects Logged & Tracked" },
+  { target: 20, suffix: "+", label: "Automated Test Scenarios" },
 ];
 
 export default function Hero() {
@@ -28,8 +28,9 @@ export default function Hero() {
         <p className="max-w-[670px] text-lg leading-[1.8] text-[var(--muted)] md:text-[19px]">
           QA engineer who turns messy requirements into <strong className="font-bold text-[var(--text)]">traceable test coverage</strong>,{" "}
           <strong className="font-bold text-[var(--text)]">reproducible bug reports</strong> and{" "}
-          <strong className="font-bold text-[var(--text)]">release confidence</strong> — 100+ test cases
-          executed and 100+ defects tracked across web, mobile and API workflows.
+          <strong className="font-bold text-[var(--text)]">release confidence</strong> — 120+ test cases
+          executed, 50+ REST API endpoints assessed and 100+ defects tracked across web, mobile and API
+          workflows.
         </p>
 
         <div className="my-9 flex flex-wrap gap-4">

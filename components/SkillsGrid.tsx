@@ -7,12 +7,14 @@ import { skillGroups, type SkillLevel } from "@/data/skills";
 const TAG_STYLES: Record<SkillLevel, string> = {
   proficient: "bg-accent-tint text-accent-deep",
   strong: "bg-[rgba(20,184,166,.14)] text-accent-deep",
+  intermediate: "bg-[rgba(74,123,176,.14)] text-[#3a5f87] dark:text-[#8fb4dd]",
   learning: "bg-[rgba(182,123,53,.14)] text-[#8a5a20] dark:text-[var(--gold)]",
 };
 
 const TAG_LABEL: Record<SkillLevel, string> = {
   proficient: "Proficient",
   strong: "Strong",
+  intermediate: "Working Knowledge",
   learning: "Learning",
 };
 

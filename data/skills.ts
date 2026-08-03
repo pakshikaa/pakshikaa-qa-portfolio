@@ -1,4 +1,4 @@
-export type SkillLevel = "proficient" | "strong" | "learning";
+export type SkillLevel = "proficient" | "strong" | "intermediate" | "learning";
 
 export type Skill = {
   name: string;
@@ -30,8 +30,8 @@ export const skillGroups: SkillGroup[] = [
       { name: "Jira", level: 80, tag: "proficient" },
       { name: "Agile / Scrum", level: 82, tag: "proficient" },
       { name: "Git & GitHub", level: 78, tag: "strong" },
-      { name: "Selenium", level: 60, tag: "learning" },
-      { name: "Playwright", level: 58, tag: "learning" },
+      { name: "Selenium", level: 68, tag: "intermediate" },
+      { name: "Playwright", level: 80, tag: "strong" },
     ],
   },
   {

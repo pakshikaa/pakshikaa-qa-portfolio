@@ -15,7 +15,6 @@ export type Project = {
   outcomeDefects?: string[];
   chips: string[];
   codeUrl?: string;
-  reportComingSoon?: boolean;
   featured?: boolean;
   subFeatures?: SubFeatureCoverage[];
 };
@@ -41,7 +40,6 @@ export const featuredProject: Project = {
     "Files >20MB inconsistently rejected",
   ],
   chips: ["Playwright", "JavaScript", "Black-box Testing", "Regression Testing"],
-  reportComingSoon: true,
   featured: true,
   subFeatures: [
     { name: "Image to PDF", total: 18, pass: 16 },

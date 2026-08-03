@@ -1,11 +1,11 @@
 import Reveal from "./Reveal";
 
 const BULLETS = [
-  "Executed 100+ manual test cases across web and mobile workflows — functional, regression, UI and usability testing.",
+  "Executed 120+ manual test cases across web and mobile workflows — functional, regression, UI and usability testing.",
   "Reported and tracked 100+ defects using Agile QA workflows, collaborating with developers to verify fixes and improve release quality.",
-  "Performed API validation using Postman — request/response checks, status-code verification and data validation.",
+  "Assessed 50+ REST API endpoints using Postman — request/response checks, status-code verification and data validation.",
   "Prepared clear test scenarios, test-case documentation, defect notes and retesting updates for sprint-based delivery.",
-  "Used Jira for issue tracking, with hands-on automation exposure in Selenium and Playwright.",
+  "Used Jira for issue tracking, and built 20+ automated test scenarios with Selenium and Playwright.",
 ];
 
 export default function ExperienceSection() {

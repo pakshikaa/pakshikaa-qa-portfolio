@@ -34,6 +34,9 @@ export default function PlaywrightReportMockup({ subFeatures }: { subFeatures: S
           );
         })}
       </div>
+      <p className="mt-3.5 border-t border-dashed border-[var(--border)] pt-3 text-[12px] leading-snug text-[var(--muted)]">
+        Summary of the generated Playwright HTML report. Full report available on request.
+      </p>
     </div>
   );
 }

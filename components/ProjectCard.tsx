@@ -1,10 +1,9 @@
 import type { Project } from "@/data/projects";
 import Reveal from "./Reveal";
 import PlaywrightReportMockup from "./PlaywrightReportMockup";
-import ReportButton from "./ReportButton";
 
 export default function ProjectCard({ project, delay = 0 }: { project: Project; delay?: number }) {
-  const { title, category, problem, approach, outcome, outcomeDefects, chips, codeUrl, reportComingSoon, featured, subFeatures } =
+  const { title, category, problem, approach, outcome, outcomeDefects, chips, codeUrl, featured, subFeatures } =
     project;
 
   return (
@@ -101,7 +100,6 @@ export default function ProjectCard({ project, delay = 0 }: { project: Project; 
             View Code ↗
           </a>
         )}
-        {reportComingSoon && <ReportButton />}
       </div>
     </Reveal>
   );
