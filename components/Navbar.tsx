@@ -54,6 +54,19 @@ export default function Navbar() {
             <span className="absolute -bottom-2 left-0 hidden h-0.5 w-0 bg-accent transition-all duration-200 group-hover:w-full lg:block" />
           </a>
         ))}
+
+        {/* Below lg the header's Resume button is hidden, so the dropdown has to
+            carry it — otherwise the primary CTA is unreachable on mobile. */}
+        <a
+          href="/PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf"
+          download="Pakshikaa_Elango_QA_Resume.pdf"
+          rel="noopener"
+          onClick={() => setMenuOpen(false)}
+          className="mb-1 mt-3 flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-white shadow-[0_14px_30px_rgba(15,139,125,.28)] lg:hidden"
+        >
+          <span aria-hidden="true" className="text-base leading-none">↓</span>
+          Download Resume
+        </a>
       </nav>
 
       <div className="flex items-center gap-3">
