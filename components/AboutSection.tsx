@@ -22,11 +22,11 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative z-[2] px-[7%] py-[78px] md:py-[105px]">
       <p className="section-kicker mb-6">01 / About</p>
-      <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-[70px]">
-        <Reveal as="div">
+      <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-[70px]">
+        <Reveal as="div" className="min-w-0">
           <h2 className="section-heading">Quality-first mindset with developer-level understanding.</h2>
         </Reveal>
-        <Reveal as="div" delay={0.1} className="flex flex-col gap-4">
+        <Reveal as="div" delay={0.1} className="flex min-w-0 flex-col gap-4">
           <p className="text-lg leading-[1.8] text-[var(--muted)]">
             I am Pakshikaa Elango, a final-year BSc (Hons) Information Technology undergraduate at SLIIT. My
             career focus is Quality Assurance because it combines accuracy, analytical thinking, user
@@ -40,9 +40,9 @@ export default function AboutSection() {
         </Reveal>
       </div>
 
-      <div className="mt-14 grid gap-6 md:grid-cols-3">
+      <div className="mt-14 grid gap-6 md:grid-cols-[repeat(3,minmax(0,1fr))]">
         {INFO_CARDS.map((card, i) => (
-          <Reveal key={card.num} as="article" delay={i * 0.08} className="card hover-card p-8">
+          <Reveal key={card.num} as="article" delay={i * 0.08} className="card hover-card min-w-0 p-6 sm:p-8">
             <span className="mb-3.5 block font-black text-accent">{card.num}</span>
             <h3 className="mb-3.5 text-2xl">{card.title}</h3>
             <p className="leading-[1.75] text-[var(--muted)]">{card.body}</p>

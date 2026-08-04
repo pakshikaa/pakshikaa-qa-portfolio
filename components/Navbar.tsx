@@ -30,28 +30,28 @@ export default function Navbar() {
         scrolled ? "h-[72px] shadow-[0_12px_32px_rgba(24,34,48,.08)]" : "h-[86px]"
       }`}
     >
-      <a href="#home" className="flex items-center gap-3.5 font-black">
-        <span className="grid h-10 w-10 place-items-center rounded-full bg-accent font-black text-white md:h-[46px] md:w-[46px]">
+      <a href="#home" className="flex min-w-0 items-center gap-2.5 font-black sm:gap-3.5">
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent font-black text-white md:h-[46px] md:w-[46px]">
           PE
         </span>
-        <strong className="text-[17px] md:text-2xl">Pakshikaa Elango</strong>
+        <strong className="truncate text-[17px] md:text-2xl">Pakshikaa Elango</strong>
       </a>
 
       <nav
         aria-label="Primary"
         className={`${
           menuOpen ? "flex" : "hidden"
-        } absolute left-0 right-0 top-[72px] z-[1000] flex-col gap-0 border-b border-[var(--border)] bg-[var(--bg)] px-[22px] py-3 text-xs font-extrabold uppercase tracking-wider text-[var(--muted)] shadow-[0_24px_55px_rgba(20,32,50,.1)] md:static md:flex md:flex-row md:gap-6 md:border-none md:bg-transparent md:p-0 md:shadow-none`}
+        } absolute left-0 right-0 top-full z-[1000] flex-col gap-0 border-b border-[var(--border)] bg-[var(--bg)] px-[22px] py-3 text-xs font-extrabold uppercase tracking-wider text-[var(--muted)] shadow-[0_24px_55px_rgba(20,32,50,.1)] lg:static lg:flex lg:flex-row lg:gap-6 lg:border-none lg:bg-transparent lg:p-0 lg:shadow-none`}
       >
         {NAV_LINKS.map((link) => (
           <a
             key={link.href}
             href={link.href}
             onClick={() => setMenuOpen(false)}
-            className="group relative py-3 hover:text-accent-deep md:py-0"
+            className="group relative py-3 hover:text-accent-deep lg:py-0"
           >
             {link.label}
-            <span className="absolute -bottom-2 left-0 hidden h-0.5 w-0 bg-accent transition-all duration-200 group-hover:w-full md:block" />
+            <span className="absolute -bottom-2 left-0 hidden h-0.5 w-0 bg-accent transition-all duration-200 group-hover:w-full lg:block" />
           </a>
         ))}
       </nav>
@@ -62,7 +62,7 @@ export default function Navbar() {
           href="/PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf"
           download="Pakshikaa_Elango_QA_Resume.pdf"
           rel="noopener"
-          className="hidden rounded-full bg-accent px-6 py-3 font-extrabold text-white shadow-[0_14px_30px_rgba(15,139,125,.28)] transition-transform duration-200 hover:-translate-y-0.5 md:inline-block"
+          className="hidden rounded-full bg-accent px-6 py-3 font-extrabold text-white shadow-[0_14px_30px_rgba(15,139,125,.28)] transition-transform duration-200 hover:-translate-y-0.5 lg:inline-block"
         >
           Resume
         </a>
@@ -71,7 +71,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Open menu"
           aria-expanded={menuOpen}
-          className="border-0 bg-transparent text-[28px] md:hidden"
+          className="shrink-0 border-0 bg-transparent text-[28px] leading-none lg:hidden"
         >
           ☰
         </button>

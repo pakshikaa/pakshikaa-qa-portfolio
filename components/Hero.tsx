@@ -14,18 +14,20 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative z-[2] grid min-h-[calc(100vh-86px)] items-center gap-12 px-[7%] py-[74px] lg:grid-cols-[minmax(0,1.08fr)_minmax(360px,520px)] lg:gap-[78px] lg:py-[74px]"
+      className="relative z-[2] grid min-h-[calc(100vh-86px)] grid-cols-[minmax(0,1fr)] items-center gap-12 px-[7%] py-[74px] lg:grid-cols-[minmax(0,1.08fr)_minmax(360px,520px)] lg:gap-[78px] lg:py-[74px]"
     >
-      <Reveal>
+      {/* min-w-0: grid items default to min-width:auto, which lets the marquee's
+          max-content track set the column width and blow the hero past the viewport. */}
+      <Reveal className="min-w-0">
         <p className="section-kicker mb-5">Associate Quality Assurance Engineer</p>
 
-        <h1 className="mb-7 font-serif text-[clamp(48px,7vw,100px)] leading-[1.02] tracking-[-1.5px]">
+        <h1 className="mb-7 font-serif text-[clamp(40px,7vw,100px)] leading-[1.02] tracking-[-1.5px]">
           I break software
           <br />
           <span className="mt-2.5 block text-accent">so users never have to.</span>
         </h1>
 
-        <p className="max-w-[670px] text-lg leading-[1.8] text-[var(--muted)] md:text-[19px]">
+        <p className="max-w-[670px] text-pretty text-lg leading-[1.8] text-[var(--muted)] md:text-[19px]">
           QA engineer who turns messy requirements into <strong className="font-bold text-[var(--text)]">traceable test coverage</strong>,{" "}
           <strong className="font-bold text-[var(--text)]">reproducible bug reports</strong> and{" "}
           <strong className="font-bold text-[var(--text)]">release confidence</strong> — 120+ test cases
@@ -44,10 +46,10 @@ export default function Hero() {
 
         <MernMarquee />
 
-        <div className="mt-1.5 grid max-w-[760px] grid-cols-2 gap-4 md:grid-cols-4">
+        <div className="mt-1.5 grid max-w-[760px] grid-cols-[repeat(2,minmax(0,1fr))] gap-3 sm:gap-4 md:grid-cols-[repeat(4,minmax(0,1fr))]">
           {STATS.map((stat) => (
-            <article key={stat.label} className="card hover-card px-[22px] py-6">
-              <strong className="block text-3xl leading-none text-accent-deep">
+            <article key={stat.label} className="card hover-card min-w-0 px-4 py-5 sm:px-[22px] sm:py-6">
+              <strong className="block text-2xl leading-none text-accent-deep sm:text-3xl">
                 <CountUp target={stat.target} suffix={stat.suffix} />
               </strong>
               <small className="mt-2.5 block text-[12.5px] font-bold text-[var(--muted)]">{stat.label}</small>
@@ -56,7 +58,7 @@ export default function Hero() {
         </div>
       </Reveal>
 
-      <Reveal delay={0.15} className="relative z-[2]">
+      <Reveal delay={0.15} className="relative z-[2] min-w-0">
         <div className="rounded-[42px] border border-white/60 bg-[var(--card)] p-4 shadow-soft transition-transform duration-300 ease-out hover:-translate-y-2 hover:rotate-[0.5deg]">
           <Image
             src="/hero-photo.png"

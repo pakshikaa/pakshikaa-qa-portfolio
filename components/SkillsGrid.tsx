@@ -30,13 +30,13 @@ export default function SkillsGrid() {
         </p>
       </Reveal>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-[repeat(3,minmax(0,1fr))]">
         {skillGroups.map((group, gi) => (
-          <Reveal key={group.title} as="article" delay={gi * 0.08} className="card hover-card flex flex-col p-8">
+          <Reveal key={group.title} as="article" delay={gi * 0.08} className="card hover-card flex min-w-0 flex-col p-6 sm:p-8">
             <h3 className="mb-2 text-2xl">{group.title}</h3>
             <ul className="mt-2 flex flex-col gap-4">
               {group.skills.map((skill) => (
-                <li key={skill.name} className="relative grid grid-cols-[1fr_auto] items-center gap-2.5 pb-3.5">
+                <li key={skill.name} className="relative grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2.5 pb-3.5">
                   <span className="text-[15px] font-bold">{skill.name}</span>
                   <span
                     className={`rounded-full px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-wide ${TAG_STYLES[skill.tag]}`}

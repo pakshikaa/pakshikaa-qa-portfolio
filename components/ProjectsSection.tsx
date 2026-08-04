@@ -14,7 +14,7 @@ export default function ProjectsSection() {
         </p>
       </Reveal>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-[repeat(2,minmax(0,1fr))]">
         <ProjectCard project={featuredProject} />
         {projects.map((project, i) => (
           <ProjectCard key={project.id} project={project} delay={(i + 1) * 0.05} />

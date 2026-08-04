@@ -42,15 +42,15 @@ export default function ArtifactsSection() {
         </p>
       </Reveal>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-[repeat(3,minmax(0,1fr))]">
         {/* Artifact 1: Test Case Document */}
-        <Reveal as="article" className="card hover-card flex flex-col gap-4 p-8">
-          <div className="flex items-center justify-between gap-2.5">
+        <Reveal as="article" className="card hover-card flex min-w-0 flex-col gap-4 p-6 sm:p-8">
+          <div className="flex flex-wrap items-center justify-between gap-x-2.5 gap-y-1">
             <span className="text-[13px] font-black text-accent-deep">Test Case Document</span>
             <span className="font-mono text-xs text-[var(--muted)]">login_module_TCs.xlsx</span>
           </div>
           <div className="overflow-x-auto rounded-2xl border border-[var(--border)] bg-[var(--card-solid)] p-3.5">
-            <table className="w-full min-w-[280px] border-collapse text-[12.5px]">
+            <table className="w-full min-w-[240px] border-collapse text-[12.5px]">
               <thead>
                 <tr>
                   {["ID", "Scenario", "Expected", "Status"].map((h) => (
@@ -91,8 +91,8 @@ export default function ArtifactsSection() {
         </Reveal>
 
         {/* Artifact 2: Bug Report (Jira-style) */}
-        <Reveal as="article" delay={0.08} className="card hover-card flex flex-col gap-4 p-8">
-          <div className="flex items-center justify-between gap-2.5">
+        <Reveal as="article" delay={0.08} className="card hover-card flex min-w-0 flex-col gap-4 p-6 sm:p-8">
+          <div className="flex flex-wrap items-center justify-between gap-x-2.5 gap-y-1">
             <span className="text-[13px] font-black text-accent-deep">Bug Report</span>
             <span className="font-mono text-xs text-[var(--muted)]">QA-247</span>
           </div>
@@ -142,15 +142,15 @@ export default function ArtifactsSection() {
         </Reveal>
 
         {/* Artifact 3: Postman API Collection */}
-        <Reveal as="article" delay={0.16} className="card hover-card flex flex-col gap-4 p-8">
-          <div className="flex items-center justify-between gap-2.5">
+        <Reveal as="article" delay={0.16} className="card hover-card flex min-w-0 flex-col gap-4 p-6 sm:p-8">
+          <div className="flex flex-wrap items-center justify-between gap-x-2.5 gap-y-1">
             <span className="text-[13px] font-black text-accent-deep">API Test Collection</span>
             <span className="font-mono text-xs text-[var(--muted)]">Postman · Auth Service</span>
           </div>
           <div className="rounded-2xl border border-[var(--border)] bg-[var(--card-solid)] p-3.5">
-            <div className="flex min-w-[280px] flex-col gap-1.5 text-[12.5px]">
+            <div className="flex min-w-0 flex-col gap-1.5 text-[12.5px]">
               {API_ROWS.map((row, i) => (
-                <div key={i} className="grid grid-cols-[auto_1fr_auto] items-center gap-2.5">
+                <div key={i} className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2.5">
                   <span
                     className={`min-w-[42px] rounded-md px-2 py-0.5 text-center text-[10.5px] font-black text-white ${METHOD_STYLE[row.method]}`}
                   >

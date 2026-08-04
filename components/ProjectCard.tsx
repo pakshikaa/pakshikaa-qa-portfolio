@@ -10,7 +10,7 @@ export default function ProjectCard({ project, delay = 0 }: { project: Project; 
     <Reveal
       as="article"
       delay={delay}
-      className={`hover-card flex flex-col rounded-[28px] border p-8 shadow-[0_18px_55px_rgba(24,34,48,.06)] ${
+      className={`hover-card flex min-w-0 flex-col rounded-[28px] border p-6 shadow-[0_18px_55px_rgba(24,34,48,.06)] sm:p-8 ${
         featured
           ? "border-accent bg-[var(--card)] ring-1 ring-accent/40 md:col-span-2"
           : "border-[var(--border)] bg-[var(--card)]"
@@ -26,8 +26,8 @@ export default function ProjectCard({ project, delay = 0 }: { project: Project; 
       </small>
       <h3 className="mb-3.5 text-2xl">{title}</h3>
 
-      <div className={featured ? "grid gap-8 md:grid-cols-[1.15fr_1fr]" : ""}>
-        <div>
+      <div className={featured ? "grid gap-8 md:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]" : ""}>
+        <div className="min-w-0">
           <div className="mb-3.5">
             <p className="mb-1 text-[11px] font-black uppercase tracking-wide text-[#a04545]">Problem</p>
             <p className="text-[14.5px] leading-[1.65] text-[var(--muted)]">{problem}</p>
@@ -75,7 +75,7 @@ export default function ProjectCard({ project, delay = 0 }: { project: Project; 
         </div>
 
         {featured && subFeatures && (
-          <div className="flex items-start">
+          <div className="flex min-w-0 items-start">
             <PlaywrightReportMockup subFeatures={subFeatures} />
           </div>
         )}

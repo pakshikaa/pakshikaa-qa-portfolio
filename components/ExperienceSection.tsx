@@ -12,12 +12,12 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="relative z-[2] px-[7%] py-[78px] md:py-[105px]">
       <p className="section-kicker mb-6">02 / Experience</p>
-      <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-[70px]">
-        <Reveal as="div">
+      <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-[70px]">
+        <Reveal as="div" className="min-w-0">
           <h2 className="section-heading">Industry exposure that shaped my QA practice.</h2>
         </Reveal>
 
-        <Reveal as="article" delay={0.1} className="card hover-card p-8">
+        <Reveal as="article" delay={0.1} className="card hover-card min-w-0 p-6 sm:p-8">
           <div className="mb-5 flex flex-wrap items-start justify-between gap-5">
             <div>
               <h3 className="text-2xl">Intern QA Engineer</h3>
