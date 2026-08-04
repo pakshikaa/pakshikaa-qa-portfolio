@@ -16,19 +16,19 @@ export const timeline: TimelineEntry[] = [
     date: "Aug 2024 – Feb 2025",
     title: "Intern QA Engineer — Codelantic (Pvt) Ltd",
     description:
-      "120+ test cases executed, 100+ defects tracked; manual, API, UI and regression testing in a real Agile team.",
+      "120+ test cases executed across 5+ modules with 95% test execution coverage; 50+ REST API endpoints assessed and 100+ defects logged and tracked, across 15+ Agile Scrum ceremonies.",
   },
   {
     date: "2023 – 2025",
     title: "Key QA & Full-Stack Projects",
     description:
-      "Six projects across web, mobile and microservices — tested for functionality, APIs and reliability (see case studies above).",
+      "Seven projects across web, mobile and microservices — tested for functionality, APIs and reliability (see case studies above).",
   },
   {
     date: "2025 – 2026",
     title: "Certifications & Continuous Learning",
     description:
-      "Completed Introduction to Responsible AI (Google Cloud & Simplilearn SkillUp), Selenium WebDriver Fundamentals, Software Testing Concepts and Methodologies, and Introduction to Software Testing / Software QA. Next: pursuing ISTQB Foundation certification.",
+      "Completed Introduction to Responsible AI (Google Cloud & Simplilearn SkillUp, 2026), Selenium WebDriver Fundamentals, Software Testing Concepts and Methodologies, Introduction to Software Testing / Software QA, React JS Tutorial (Great Learning Academy) and React Basics (Coursera). Next: pursuing ISTQB Foundation certification.",
   },
   {
     date: "Now",

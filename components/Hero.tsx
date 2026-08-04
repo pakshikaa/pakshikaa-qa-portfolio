@@ -3,11 +3,14 @@ import Reveal from "./Reveal";
 import MernMarquee from "./MernMarquee";
 import CountUp from "./CountUp";
 
+// Every figure here is the single source of truth shared with the resume.
+// The 43 is the PixelsSuite Playwright count — deliberately the same number the
+// featured case study reports, so the two can never be read as conflicting.
 const STATS = [
   { target: 120, suffix: "+", label: "Test Cases Executed" },
   { target: 50, suffix: "+", label: "REST API Endpoints Assessed" },
   { target: 100, suffix: "+", label: "Defects Logged & Tracked" },
-  { target: 20, suffix: "+", label: "Automated Test Scenarios" },
+  { target: 43, suffix: "", label: "Automated Scenarios (Playwright)" },
 ];
 
 export default function Hero() {

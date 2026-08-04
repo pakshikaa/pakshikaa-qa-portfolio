@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Pakshikaa Elango — Resume</title>
+<style>
+  /* Source of truth for public/PAKSHIKAA_ELANGO_QA_ENGINEER_RESUME.pdf.
+     Rebuild with: node resume/build.js  (Chromium print-to-PDF, US Letter).
+     Every figure here must match the portfolio — see data/ and components/. */
+  @page {
+    size: letter;
+    margin: 0.42in 0.45in;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.14;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header { text-align: center; margin-bottom: 4px; }
+
+  h1 {
+    font-size: 17pt;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+
+  .role { font-size: 9.5pt; }
+
+  .contact { font-size: 7.8pt; line-height: 1.3; }
+
+  h2 {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 3.5px 0 0;
+    padding-bottom: 0.5px;
+    border-bottom: 1px solid #000;
+  }
+
+  h2 + * { margin-top: 2.5px; }
+
+  p { margin: 0 0 1.5px; }
+
+  .skills p { margin-bottom: 1px; }
+
+  ul {
+    margin: 1px 0 0;
+    padding-left: 13px;
+  }
+
+  li { margin-bottom: 0.5px; }
+
+  /* Certifications read fine side by side and save ~60px of vertical space. */
+  ul.two-col {
+    column-count: 2;
+    column-gap: 22px;
+    margin-bottom: 2px;
+  }
+  ul.two-col li { break-inside: avoid; }
+
+  /* Two-column heading: employer/project left, dates/location right. */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .row .left { font-weight: 700; }
+  .row .right { font-weight: 700; text-align: right; white-space: nowrap; }
+  .row.sub .left,
+  .row.sub .right { font-weight: 400; font-style: italic; }
+
+  .entry { margin-top: 3px; }
+  .entry:first-of-type { margin-top: 1.5px; }
+
+  /* Projects run as single flowing lines rather than heading + bullet: seven
+     entries have to share one page with everything else. */
+  .project { margin-bottom: 1.5px; }
+  .project b { font-weight: 700; }
+  .project .stack { color: #444; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Pakshikaa Elango</h1>
+  <div class="role">Associate Quality Assurance Engineer</div>
+  <div class="contact">
+    +94 75 051 0990 &nbsp;|&nbsp; pakshikaa@gmail.com &nbsp;|&nbsp; Jaffna, Sri Lanka<br />
+    github.com/pakshikaa &nbsp;|&nbsp; linkedin.com/in/pakshikaa-elango &nbsp;|&nbsp; pakshikaa-portfolio.vercel.app
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p>
+  Associate Quality Assurance Engineer with internship and academic project experience across Manual,
+  Functional, Regression, Smoke, API, UI, and Mobile Testing, Defect Tracking, Test Planning, and Release
+  Validation. Executed 120+ test cases across 5+ modules with 95% test execution coverage, assessed 50+ REST API
+  endpoints, and logged and verified 100+ software defects while supporting Agile Scrum testing cycles.
+  Automated 43 Playwright (JavaScript) test scenarios for the PixelsSuite Document Converter, plus Selenium
+  WebDriver scripts for academic systems. Skilled in Postman, Jira, GitHub, SDLC, STLC, and Cross-Browser
+  Testing, and seeking to improve software quality across web and mobile applications.
+</p>
+
+<h2>Skills</h2>
+<div class="skills">
+  <p><b>Testing:</b> Manual, Functional, Regression, Smoke, API, UI, Mobile, UAT, Compatibility, Performance, Load Testing</p>
+  <p><b>Automation:</b> Playwright (hands-on, 43 automated scenarios), Selenium WebDriver, Test Automation Scripts, UI Automation</p>
+  <p><b>QA Process:</b> SDLC, STLC, Agile Scrum, Test Planning &amp; Execution, Test Reporting, Requirement Validation, Defect Management, Root Cause Analysis, Test Metrics, Release Validation</p>
+  <p><b>Tools:</b> Postman, Jira, Git, GitHub, Chrome DevTools</p>
+  <p><b>Technical:</b> SQL, Java, JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB</p>
+</div>
+
+<h2>Experience</h2>
+
+<div class="entry">
+  <div class="row">
+    <span class="left">Codelantic (Pvt) Ltd</span>
+    <span class="right">Aug 2024 &ndash; Feb 2025</span>
+  </div>
+  <div class="row sub">
+    <span class="left">Intern QA Engineer</span>
+    <span class="right">Sri Lanka</span>
+  </div>
+  <ul>
+    <li>Executed 120+ manual, regression, smoke, API, UI, and mobile test cases across 5+ modules with 95% test execution coverage.</li>
+    <li>Logged, tracked, and verified 100+ defects in Jira, improving defect resolution efficiency and release readiness.</li>
+    <li>Assessed 50+ REST API endpoints via Postman &mdash; request/response, schema, and status-code validation.</li>
+    <li>Authored 30+ test scenarios, defect reports, and release validation documents aligned with SDLC/STLC standards.</li>
+    <li>Participated in 15+ Agile Scrum ceremonies and reviewed regression results, bug fixes, and release readiness.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row">
+    <span class="left">Academic QA Automation Project Work</span>
+    <span class="right">Coursework Projects</span>
+  </div>
+  <div class="row sub">
+    <span class="left">QA Automation and Software Testing Contributor</span>
+    <span class="right">SLIIT</span>
+  </div>
+  <ul>
+    <li>Automated 43 test scenarios using Playwright (JavaScript) across Image-to-PDF, PDF-to-Word, and Word-to-PDF conversion flows &mdash; PixelsSuite Document Converter, SLIIT SQA coursework (IT4100).</li>
+    <li>Designed and manually executed the same 43 black-box cases before automating them, reaching a 95% pass rate and reporting high-severity file-validation defects.</li>
+    <li>Built Selenium WebDriver scripts for login, registration, and dashboard verification on SkillHorizon and other academic systems; performed API, regression, and compatibility testing across 3+ academic systems.</li>
+  </ul>
+</div>
+
+<h2>Academic Projects</h2>
+
+<p class="project"><b>PixelsSuite &mdash; Document Converter</b> <span class="stack">| Playwright, JavaScript</span> &mdash; Automated 43 scenarios across three conversion sub-features; upload validation, 20MB size boundaries, content preservation.</p>
+
+<p class="project"><b>MomEra &mdash; AI-Driven IVF Success Prediction</b> <span class="stack">| React Native, Expo, XGBoost</span> &mdash; Tested mobile workflows and API-based journeys; verified regression scenarios and release readiness.</p>
+
+<p class="project"><b>SkillHorizon Learning Platform</b> <span class="stack">| ReactJS, Spring Boot, REST APIs</span> &mdash; Built Selenium automation for login/dashboard workflows; UI, navigation, and cross-browser REST API testing.</p>
+
+<p class="project"><b>Smart Campus Management System</b> <span class="stack">| ReactJS, NodeJS, MongoDB</span> &mdash; Prepared 15+ test scenarios for service-request workflows; verified integration, role-based access, and API responses.</p>
+
+<p class="project"><b>My Finance Mate</b> <span class="stack">| ReactJS, NodeJS, MongoDB</span> &mdash; Calculation and boundary testing for budgets and savings goals; validated data persistence and totals across views.</p>
+
+<p class="project"><b>Sai Photography Management System</b> <span class="stack">| NodeJS, ExpressJS, MongoDB</span> &mdash; End-to-end booking and payment workflow testing; validated inventory updates and REST endpoints.</p>
+
+<p class="project"><b>ToDo Task Management App</b> <span class="stack">| Kotlin, Android Studio</span> &mdash; Functional and usability testing on task CRUD; verified persistence and UI behaviour across device states.</p>
+
+<h2>Professional Achievements</h2>
+<p>
+  Executed 120+ test cases across 5+ modules with 95% test execution coverage, verified 100+ defects, and
+  assessed 50+ REST API endpoints via Postman &mdash; tracked in Jira using Agile QA processes. Separately,
+  automated 43 Playwright scenarios for PixelsSuite as SLIIT SQA coursework (IT4100).
+</p>
+
+<h2>Certifications</h2>
+<!-- CSS columns flow top-to-bottom, so this order is what balances into
+     QA/testing certs on the left and React certs on the right. -->
+<ul class="two-col">
+  <li>Introduction to Responsible AI &ndash; Google Cloud &amp; Simplilearn SkillUp (2026)</li>
+  <li>Selenium WebDriver Fundamentals</li>
+  <li>Software Testing Concepts and Methodologies</li>
+  <li>Introduction to Software Testing / Software QA</li>
+  <li>React JS Tutorial &ndash; Great Learning Academy</li>
+  <li>React Basics &ndash; Coursera</li>
+</ul>
+<p><b>Next:</b> Pursuing ISTQB Foundation certification.</p>
+
+<h2>Education</h2>
+<div class="row">
+  <span class="left">Sri Lanka Institute of Information Technology (SLIIT)</span>
+  <span class="right">2022 &ndash; Expected 2026</span>
+</div>
+<div class="row sub">
+  <span class="left">BSc (Hons) Information Technology</span>
+  <span class="right">Sri Lanka</span>
+</div>
+
+<h2>Additional</h2>
+<p><b>Languages:</b> Tamil, English</p>
+<p><b>Soft Skills:</b> Communication, Analytical Thinking, Problem Solving, Attention to Detail, Team Collaboration, Time Management</p>
+
+<h2>References</h2>
+<p>Available upon request.</p>
+
+</body>
+</html>

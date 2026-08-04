@@ -1,11 +1,14 @@
 import Reveal from "./Reveal";
 
+// Mirrors the resume's Codelantic bullets one-for-one. Automation is
+// deliberately absent here: the 43 Playwright scenarios are SLIIT coursework
+// (PixelsSuite), not internship work, and are credited in the case study.
 const BULLETS = [
-  "Executed 120+ manual test cases across web and mobile workflows — functional, regression, UI and usability testing.",
-  "Reported and tracked 100+ defects using Agile QA workflows, collaborating with developers to verify fixes and improve release quality.",
-  "Assessed 50+ REST API endpoints using Postman — request/response checks, status-code verification and data validation.",
-  "Prepared clear test scenarios, test-case documentation, defect notes and retesting updates for sprint-based delivery.",
-  "Used Jira for issue tracking, and built 20+ automated test scenarios with Selenium and Playwright.",
+  "Executed 120+ manual, regression, smoke, API, UI and mobile test cases across 5+ modules with 95% test execution coverage.",
+  "Logged, tracked and verified 100+ defects in Jira, improving defect resolution efficiency and release readiness.",
+  "Assessed 50+ REST API endpoints via Postman — request/response, schema and status-code validation.",
+  "Authored 30+ test scenarios, defect reports and release validation documents aligned with SDLC/STLC standards.",
+  "Participated in 15+ Agile Scrum ceremonies, reviewing regression results, bug fixes and release readiness.",
 ];
 
 export default function ExperienceSection() {

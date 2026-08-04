@@ -42,7 +42,6 @@ export const skillGroups: SkillGroup[] = [
       { name: "Node.js / Express", level: 70, tag: "strong" },
       { name: "MongoDB / SQL", level: 68, tag: "strong" },
       { name: "Java", level: 70, tag: "strong" },
-      { name: "PHP / MySQL", level: 62, tag: "learning" },
     ],
   },
 ];
