@@ -63,7 +63,7 @@ export const projects: Project[] = [
       "Caught invalid-input and edge-case handling gaps before demo; verified prediction output stayed within valid bounds across test data.",
     ],
     chips: ["React Native", "Expo", "XGBoost", "API Testing"],
-    codeUrl: "https://github.com/GnanasampanthanThivakar/ivffinal",
+    codeUrl: "https://github.com/pakshikaa/ivffinal",
   },
   {
     id: "smart-campus",
@@ -79,7 +79,7 @@ export const projects: Project[] = [
       "Surfaced state-transition and permission defects; documented reproducible steps that shortened developer fix cycles.",
     ],
     chips: ["React", "Node.js", "MongoDB", "Microservices"],
-    codeUrl: "https://github.com/GnanasampanthanThivakar/mtit",
+    codeUrl: "https://github.com/pakshikaa/MTIT_",
   },
   {
     id: "skillhorizon",
@@ -95,7 +95,7 @@ export const projects: Project[] = [
       "Identified notification and comment-state bugs; improved coverage of error and empty states before delivery.",
     ],
     chips: ["React", "Spring Boot", "MongoDB", "REST API"],
-    codeUrl: "https://github.com/GnanasampanthanThivakar/SkillHorizon",
+    codeUrl: "https://github.com/pakshikaa/SkillHorizon",
   },
   {
     id: "finance-mate",
@@ -111,7 +111,7 @@ export const projects: Project[] = [
       "Verified calculation accuracy across edge cases; flagged data-consistency issues between views.",
     ],
     chips: ["React", "Node.js", "MongoDB", "JavaScript"],
-    codeUrl: "https://github.com/GnanasampanthanThivakar/MYFINANCEMATE",
+    codeUrl: "https://github.com/pakshikaa/MYFINANCEMATE",
   },
   {
     id: "sai-photography",
