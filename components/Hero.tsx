@@ -33,7 +33,7 @@ export default function Hero() {
         <p className="max-w-[670px] text-pretty text-lg leading-[1.8] text-[var(--muted)] md:text-[19px]">
           QA engineer who turns messy requirements into <strong className="font-bold text-[var(--text)]">traceable test coverage</strong>,{" "}
           <strong className="font-bold text-[var(--text)]">reproducible bug reports</strong> and{" "}
-          <strong className="font-bold text-[var(--text)]">release confidence</strong> — 120+ test cases
+          <strong className="font-bold text-[var(--text)]">release confidence</strong>. 120+ test cases
           executed, 50+ REST API endpoints assessed and 100+ defects tracked across web, mobile and API
           workflows.
         </p>
