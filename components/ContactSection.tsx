@@ -2,6 +2,7 @@ import Reveal from "./Reveal";
 
 const CONTACT_LINKS = [
   { href: "mailto:pakshikaa@gmail.com", label: "pakshikaa@gmail.com", external: false },
+  { href: "tel:+94750510990", label: "+94 75 051 0990", external: false },
   { href: "https://github.com/pakshikaa", label: "github.com/pakshikaa", external: true },
   {
     href: "https://www.linkedin.com/in/pakshikaa-elango",
